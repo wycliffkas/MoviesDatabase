@@ -8,7 +8,8 @@
     "build": "webpack --mode production",
     "test": "jest --watch",
     "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage --colors"
+    "test:coverage": "jest --coverage --colors",
+    "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls"
   },
   "author": "jude",
   "license": "MIT",
@@ -63,7 +64,9 @@
       "!src/__tests__/setup/setupEnzyme.js",
       "!src/index.js",
       "!src/assets/css/**",
-      "!src/store/**"
+      "!src/store/**",
+      "!data/keyMap.js",
+      "!/node_modules/"
     ]
   }
 }
