@@ -15,8 +15,8 @@ class App extends Component {
           <Header />
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route exact path="/movie/:id" component={MovieDetails} />
-            <Route exact path="/cart" component={Cart} />
+            <Route path="/movie/:id" component={MovieDetails} />
+            <Route path="/cart" component={Cart} />
           </Switch>
         </Router>
       </Provider>
