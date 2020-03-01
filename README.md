@@ -19,3 +19,4 @@ The Hosted version can be found [here]().
 - Run `npm install` if you use npm or `yarn` if you use yarn inorder to install the dependencies
 - Run `yarn start:dev` to launch the app which will automatically launch the app in the browser.
 - To run test run `yarn test -u` which will run the tests with coverage.
+
