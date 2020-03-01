@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/wycliffkas/MoviesDatabase.svg?branch=master)](https://travis-ci.org/wycliffkas/MoviesDatabase)
-[![Coverage Status](https://coveralls.io/repos/github/wycliffkas/MoviesDatabase/badge.svg?branch=master)](https://coveralls.io/github/wycliffkas/MoviesDatabase?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/wycliffkas/MoviesDatabase/badge.svg?branch=adding-coverage)](https://coveralls.io/github/wycliffkas/MoviesDatabase?branch=adding-coverage)
 
 # The Movies Database
 

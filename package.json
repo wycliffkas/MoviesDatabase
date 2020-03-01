@@ -6,9 +6,9 @@
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot --history-api-fallback",
     "build": "webpack --mode production",
-    "test": "jest --watch",
+    "test": "jest",
     "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage --colors",
+    "test:coverage": "jest --coverage",
     "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls"
   },
   "author": "jude",
