@@ -1,50 +1,36 @@
 const moviesReducer = (state, action) => {
   switch (action.type) {
     case "GET_MOVIES": {
-      if (action.payload) {
-        return {
-          ...state,
-          //   movies: [...state.movies, ...action.payload.results],
-          movies: action.payload.results,
-          loading: false
-        };
-      }
+      return {
+        ...state,
+        movies: action.payload.results,
+        loading: false
+      };
     }
     case "MORE_MOVIES": {
-      if (action.payload) {
-        console.log("thi--->", action.payload);
-        return {
-          ...state,
-          movies: [...state.movies, ...action.payload.results],
-          // movies: action.payload.results,
-          loading: false
-        };
-      }
+      return {
+        ...state,
+        movies: [...state.movies, ...action.payload.results],
+        loading: false
+      };
     }
     case "GET_MOVIES_ERROR": {
-      if (action.payload) {
-        return {
-          ...state,
-          message: action.payload
-        };
-      }
+      return {
+        ...state,
+        error: action.payload
+      };
     }
     case "MORE_MOVIES_ERROR": {
-      if (action.payload) {
-        return {
-          ...state,
-          message: action.payload
-        };
-      }
+      return {
+        ...state,
+        error: action.payload
+      };
     }
     case "EACH_MOVIE": {
-      if (action.payload) {
-        console.log("thiis is the payload--->", action.payload);
-        return {
-          ...state,
-          movie: action.payload
-        };
-      }
+      return {
+        ...state,
+        movie: action.payload
+      };
     }
     default: {
       return state;
