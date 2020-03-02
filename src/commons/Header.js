@@ -17,14 +17,14 @@ const Header = () => {
           <div className="navbar-nav">
             <NavLink
               to="/"
-              activeClassName="is-active"
+              activeClassName="active"
               className="nav-item nav-link nav-home className"
             >
               Home
             </NavLink>
             <NavLink
               to="/cart"
-              activeClassName="is-active"
+              activeClassName="active"
               className="nav-item nav-link className"
             >
               Cart
