@@ -1,6 +1,6 @@
-const key = "be767a41444abd83b1fe64254fba0f81";
-const moviesUrl = `https://api.themoviedb.org/3/discover/movie?api_key=${key}&language=en-US&with_genres=`;
 import axios from "axios";
+const tmdToken = process.env.TMD_TOKEN;
+const moviesUrl = `https://api.themoviedb.org/3/discover/movie?api_key=${tmdToken}&language=en-US&with_genres=`;
 
 const loadMovies = (id, page) => {
   return dispatch => {
@@ -12,10 +12,10 @@ const loadMovies = (id, page) => {
           payload: data.data
         });
       })
-      .catch(e => {
+      .catch(error => {
         dispatch({
           type: "MORE_MOVIES_ERROR",
-          payload: e
+          payload: error
         });
       });
   };

@@ -1,5 +1,5 @@
-const key = "be767a41444abd83b1fe64254fba0f81";
-const moviesUrl = `https://api.themoviedb.org/3/genre/movie/list?api_key=${key}&language=en-US`;
+const tmdToken = process.env.TMD_TOKEN;
+const moviesUrl = `https://api.themoviedb.org/3/genre/movie/list?api_key=${tmdToken}&language=en-US`;
 
 import axios from "axios";
 
@@ -13,10 +13,10 @@ export const genres = () => {
           payload: data.data
         });
       })
-      .catch(e => {
+      .catch(error => {
         dispatch({
           type: "GENRES_ERROR",
-          payload: e
+          payload: error
         });
       });
   };

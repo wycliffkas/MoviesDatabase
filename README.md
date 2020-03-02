@@ -5,7 +5,7 @@
 
 An Application that fetches and displays movies from TheMovieDatabase Api
 
-The Hosted version can be found [here]().
+The Hosted version can be found [here](https://affectionate-sinoussi-76a9de.netlify.com/).
 
 ## Features
 
@@ -24,8 +24,10 @@ The Hosted version can be found [here]().
 
 ###### installation
 
-- clone the repository on the local environment by running:
+- Clone the repository on the local environment by running:
   `git clone https://github.com/wycliffkas/MoviesDatabase.git`
+- Create a .env file and add a variable `TMD_TOKEN=<the movies database token>`
+- Run `source .env` to source the environment variable
 - Run `npm install` if you use npm or `yarn` if you use yarn inorder to install the dependencies
 - Run `yarn start` to launch the app which will automatically launch the app in the browser.
 

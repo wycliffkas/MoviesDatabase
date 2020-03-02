@@ -5,6 +5,7 @@ import Cart from "./components/Cart";
 import { Provider } from "react-redux";
 import store from "./store/store";
 import Header from "./commons/Header";
+import NotFound from "./commons/NotFound";
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 
 class App extends Component {
@@ -15,8 +16,10 @@ class App extends Component {
           <Header />
           <Switch>
             <Route exact path="/" component={Home} />
+            <Route exact path="/home" component={Home} />
             <Route path="/movie/:id" component={MovieDetails} />
-            <Route path="/cart" component={Cart} />
+            <Route exact path="/cart" component={Cart} />
+            <Route component={NotFound} />
           </Switch>
         </Router>
       </Provider>
